@@ -1,0 +1,83 @@
+header {
+  background-image: url("../assets/images/music_background.png");
+}
+
+.grid_music {
+  display: grid;
+  border: solid 1vw pink;
+  grid-template-columns: 1fr 1fr;
+  color: pink;
+  background-color: black;
+  margin: 0% 10% 10% 10%;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.album {
+  /* border-left: solid 1.5vw darkgray; */
+  position: relative;
+  margin: 10%;
+}
+
+/* shows the image of the CD when mouse is hovered over */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: black;
+  background-image: url(../assets/images/cd.png);
+  background-size: 100%;
+}
+
+.album:hover .overlay {
+  opacity: 0.9;
+}
+
+.main_album:hover .overlay {
+  opacity: 0.9;
+}
+
+/* format of the album info when shown */
+.album_info_name {
+  position: relative;
+  text-align: center;
+  font-family: "Agency";
+  color: black;
+  padding: 0px 50px 0px 50px;
+  font-size: 2vw;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* keeps links the same color */
+.music a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.music a:visited {
+  color: white;
+}
+
+/* mobile screen */
+@media screen and (max-width: 850px) {
+  .grid_music {
+    grid-template-columns: 1fr;
+  }
+
+  .album_info_name {
+    padding: 0px 50px 0px 50px;
+    font-size: 4vw;
+    top: 20%;
+    left: 50%;
+  }
+}

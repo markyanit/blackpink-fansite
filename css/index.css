@@ -1,0 +1,77 @@
+header {
+  background-image: url("../assets/images/home_background.png");
+}
+
+.content {
+  font-family: "Agency";
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 10% 10% 0% 10%;
+}
+
+#bp {
+  width: 40vw;
+  transition: width 1s;
+}
+
+#bp:hover {
+  width: 50vw;
+}
+
+#follow_text {
+  font-size: 3vw;
+  letter-spacing: 5px;
+  margin: 0% 10% 3% 10%;
+}
+
+.grid_follow {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  color: pink;
+  background-color: black;
+  margin: 0% 30% 10% 30%;
+}
+
+.icon {
+  padding: 0 5% 0 5%;
+  margin: auto;
+}
+
+.icon img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.poster {
+  margin: 0 10% 10% 0%;
+}
+
+.poster img {
+  width: 100%;
+  display: block;
+}
+
+#album_poster {
+  border: solid 1vw pink;
+  padding: 5%;
+}
+
+/* keeps links the same color */
+.home a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.home a:visited {
+  color: white;
+}
+
+.grid-follow-item {
+  width: 5vw;
+  transition: width 1s;
+}
+
+.grid-follow-item:hover {
+  width: 10vw;
+}

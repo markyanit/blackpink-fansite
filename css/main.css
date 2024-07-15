@@ -1,0 +1,171 @@
+/*  Includes 'Agency' font */
+@font-face {
+  font-family: "Agency";
+  src: url("../assets/fonts/AGENCYR.TTF");
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  color: black;
+  font-family: "Agency";
+  font-size: 0.5vw;
+  text-align: left;
+  background-color: pink;
+  padding: 5% 10% 5% 10%;
+  /* border: solid 1px blue; */
+}
+
+.grid-footer-item {
+  margin: 0 5% 0 5%;
+  /* border: solid 1px green; */
+}
+
+.logoImg {
+  max-width: 90%;
+}
+
+.grid-footer-item img:hover {
+  background-color: black;
+}
+
+/* keeps links the same color */
+.grid-footer a:link {
+  color: black;
+}
+
+.grid-footer a:visited {
+  color: black;
+}
+
+/* changes color of link when hovered over */
+.grid-footer a:hover {
+  color: white;
+}
+
+
+/* NAVIGATION BAR REGULAR */
+.grid_nav {
+  display: grid;
+  grid-template-columns: 30% 17.5% 17.5% 17.5% 17.5%;
+  color: black;
+  font-family: "Agency";
+  font-size: 1.3vw;
+  padding-top: 1.5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  top: 0;
+  position: sticky;
+}
+
+.logo img {
+  max-width: 80%;
+  height: auto;
+}
+
+.logo img:hover {
+  background-color: white;
+}
+
+.home,
+.about,
+.music,
+.gallery {
+  text-align: right;
+}
+
+/* keeps links the same color */
+.grid-nav-item a:link {
+  color: pink;
+  text-decoration: none;
+}
+
+.grid-nav-item a:visited {
+  color: pink;
+}
+
+/* changes color of nav bar grid items */
+.grid-nav-item a:hover {
+  color: white;
+}
+
+.transition_clear {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0));
+  height: 20vw;
+  margin-top: 40%;
+}
+
+.head_text {
+  font-family: "Agency";
+  letter-spacing: 10px;
+  font-size: 5vw;
+  text-align: center;
+  color: pink;
+  background-color: black;
+}
+
+/* keeps body formatting in one column */
+.grid_body {
+  display: grid;
+  grid-template-columns: auto;
+  color: pink;
+  background-color: black;
+}
+
+/* FOOTER */
+.footer_info {
+  font-family: "Agency";
+  text-align: center;
+  font-size: 1.3vw;
+  color: black;
+  background-color: pink;
+  padding-bottom: 1%;
+}
+
+/* TRANSITIONS */
+.transition_pb {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(255, 192, 203, 1) 75%
+  );
+  height: 8vw;
+}
+
+.transition_bp {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 192, 203, 1) 75%
+  );
+  height: 8vw;
+}
+
+/* mobile screen */
+@media screen and (max-width: 850px) {
+  .head_text {
+    letter-spacing: 10px;
+    font-size: 10vw;
+  }
+
+  /* FOOTER */
+  .grid-footer {
+    grid-template-columns: 40% 30% 30%;
+    font-size: 1vw;
+    padding: 5%;
+    /* border: solid 1px blue; */
+  }
+  
+  .grid-footer-item {
+    margin: 3%;
+  }
+}

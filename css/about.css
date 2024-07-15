@@ -1,0 +1,153 @@
+header {
+  background-image: url("../assets/images/about_background.png");
+}
+
+.grid_about {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 0% 10% 10% 10%;
+}
+
+.group {
+  width: 100%;
+  margin: 30% 0 0 0%;
+  padding: 0;
+}
+
+.about_text {
+  font-family: "Agency";
+  font-size: 1.8vw;
+  text-align: left;
+  color: white;
+  padding: 0;
+  margin: 8%;
+}
+
+.about_text h1 {
+  font-size: 3vw;
+  font-family: "Agency";
+  color: pink;
+  letter-spacing: 5px;
+}
+
+.grid_members {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 1% 10% 10% 10%;
+}
+
+.grid-members-item {
+  border: solid 1vw pink;
+  padding: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  transition: width 1s;
+}
+
+.grid-members-item:hover {
+  width: 25vw;
+}
+
+.grid-members-item h1 {
+  color: pink;
+  font-size: 4vw;
+  text-align: center;
+  margin: 0;
+}
+
+.jisoo {
+  background-image: url("../assets/images/jisoo_profile.jpg");
+}
+
+.jisoo:hover {
+  background-image: url("../assets/images/jisoo_info.png");
+}
+
+.jennie {
+  background-image: url("../assets/images/jennie_profile.jpg");
+}
+
+.jennie:hover {
+  background-image: url("../assets/images/jennie_info.png");
+}
+
+.lisa {
+  background-image: url("../assets/images/lisa_profile.jpg");
+}
+
+.lisa:hover {
+  background-image: url("../assets/images/lisa_info.png");
+}
+
+.rose {
+  background-image: url("../assets/images/rose_profile.jpg");
+}
+
+.rose:hover {
+  background-image: url("../assets/images/rose_info.png");
+}
+
+/* keeps links the same color */
+.about a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.about a:visited {
+  color: white;
+}
+
+/* mobile screen */
+@media screen and (max-width: 850px) {
+  .grid_about {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0% 10% 10% 10%;
+  }
+
+  .group {
+    margin: auto;
+  }
+
+  .about_text {
+    font-family: "Agency";
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 8%;
+  }
+
+  .about_text h1 {
+    font-size: 6vw;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .grid_members {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+  }
+
+  .grid-members-item {
+    border: solid 1vw pink;
+    padding: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10%;
+    width: 60vw;
+    transition: width 1s;
+  }
+
+  .grid-members-item:hover {
+    width: 60vw;
+  }
+
+  .grid-members-item h1 {
+    font-size: 10vw;
+  }
+}
